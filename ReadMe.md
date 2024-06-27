@@ -1,0 +1,1 @@
+Creating a program that will fetch data from an API. To demonstrate API communication, DOM manipulation, and creating user-friendly interfaces.
