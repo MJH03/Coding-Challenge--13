@@ -24,10 +24,10 @@ function call(count) {
 const button1 = document.getElementById("next")
     button1.addEventListener("click", function(){
         call(count);
-        count = (count < 10) ? ++count : 0;
+        count = (count < 10) ? ++count : 0; //Step 5: Dynamic Data handling
     })
 const button2 = document.getElementsById("previous")
     button2.addeventListener("click", function(){
         call(count)
-        count = (count > 0) ? --count : 10
+        count = (count > 0) ? --count : 10 //Continued dynamics... 
     });
