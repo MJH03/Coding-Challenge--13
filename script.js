@@ -10,6 +10,11 @@ function call() {
                 document.querySelector("productPicture").width = "400";
                 document.querySelector("discription").textContent = `${data[0].description}`
                 document.querySelectorAll("productPrice").textContent = `$${data[0].price}`
+        
+//Step 2:Improve Error Handling
+            }).catch((err) => {
+                console.log(Error)
+                alert('Sorry but the website did not load. Please try again.');
         })
 }
 call();
