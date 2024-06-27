@@ -19,15 +19,15 @@ function call(count) {
             console.log("Fetch has Landed");
             alert("Check out these exciting products")
         })
-}
+ }
 //Step 4: Navigation Buttons for Products:
-const button1 = document.getElementById("next")
-    button1.addEventListener("click", function(){
+const nextButton = document.querySelector(".next")
+    nextButton.addEventListener("click", function(){
         call(count);
         count = (count < 10) ? ++count : 0; //Step 5: Dynamic Data handling
     })
-const button2 = document.getElementsById("previous")
-    button2.addeventListener("click", function(){
+const previousButton = document.querySelectory(".previous")
+    previousButton.addEventListener("click", function(){
         call(count)
         count = (count > 0) ? --count : 10 //Continued dynamics... 
     });
