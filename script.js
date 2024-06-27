@@ -15,6 +15,10 @@ function call() {
             }).catch((err) => {
                 console.log(Error)
                 alert('Sorry but the website did not load. Please try again.');
+//Step 3:Implement a Loading State
+        }).finally(()=>{
+            console.log("Fetch has Landed");
+            alert("Check out these exciting products")
         })
 }
-call();
+call()
