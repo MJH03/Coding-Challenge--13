@@ -1,5 +1,6 @@
 //U6899-7808
 //Step 1 Fetch and Display products
+let count = 0
 function call(count) {
         const request = fetch('https://course-api.com/react-store-products').then((response) => {
             return response.json();
@@ -21,13 +22,13 @@ function call(count) {
         })
  }
 //Step 4: Navigation Buttons for Products:
-const nextButton = document.querySelector(".next")
-    nextButton.addEventListener("click", function(){
-        call(count);
-        count = (count < 10) ? ++count : 0; //Step 5: Dynamic Data handling
-    })
-const previousButton = document.querySelectory(".previous")
-    previousButton.addEventListener("click", function(){
-        call(count)
-        count = (count > 0) ? --count : 10 //Continued dynamics... 
-    });
+const previous = document.querySelector("button");
+        previous.addEventListener("click", function () {// Step 5: Added Dynamic Data hanlding 
+            call(count)
+            count = (count > 0) ? --count : 10;
+        })
+const next = document.querySelector("button");
+        next.addEventListener("click", function(){
+            call()
+            count = (count < 10) ? ++count : 0;
+        })
